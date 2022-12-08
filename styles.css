@@ -1,0 +1,128 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgb(219, 221, 120), rgb(120, 226, 226), rgb(230, 133, 109));
+}
+
+*::selection {
+    background-color: rgb(219, 221, 120);
+}
+
+body {
+    margin: 0px;
+    display:flex;
+    font-family: "Dongle", sans-serif;
+    font-size:20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1, h2 {
+    font-family: "Silkscreen", monospace;
+}
+
+h1 {
+    position: relative;
+    top: 30px;
+    left: -180px;
+    font-size: 64px;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.5em;
+}
+
+h2 {
+    letter-spacing: 0.3em;
+}
+
+h3 {
+    margin: 5px;
+    padding: 0px;
+}
+
+button {
+    background-color: rgb(230, 133, 109);
+    font-family: "Silkscreen",monospace;
+    letter-spacing: 0.2em;
+    padding: 5px;
+    width: 130px;
+    margin: 5px;
+    border: none;
+    transition:  all 0.3s ease-in;
+}
+
+button:hover {
+    background-color:rgb(120, 226, 226);
+    letter-spacing: normal;
+    width: 130px;
+    transition:  all 0.3s ease-in;
+}
+
+button:active {
+    background-color: rgb(56, 14, 170);
+    color: white;
+    transition: all 0.2s;
+}
+
+header {
+    background-color: rgb(252, 252, 252);
+    width: 90vmin;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    flex-direction: row;
+}
+
+template {
+    transition: all 0.2s ease-in;
+}
+
+#aboutPic {
+    max-width: 20%;
+    border-radius: 180px;
+}
+
+#sparkleContainer {
+    content:"";
+    position: fixed;
+    height:10px;
+    width:10px;
+    border-radius: 50%;
+}
+
+#catCursor {
+    width: 25px;
+}
+
+#exampleContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#nailPolish, #textGame, #bankApp {
+    min-width: 30%;
+    padding: 10px;
+}
+
+#aboutMe, #fact, #exampleContainer {
+    background-color: rgb(252, 252, 252);
+    width: 90vmin;
+    padding: 20px;
+}
+
+#aboutMe {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

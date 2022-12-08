@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image" href="images\cat_1f408.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Silkscreen&family=VT323&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=VT323&display=swap" rel="stylesheet">
+    <script src="main.js"></script> 
+    <title>tracey b's website</title>
+</head>
+<body>
+
+    <div id="sparkleContainer"><img id="catCursor" src="images\cat_1f408.png" alt="cat"></div>
+    <h1>tracey b</h1>
+
+    <header>
+        <h3>portfolio website</h3>
+            <p>welcome to my cool website.</p>
+            <nav>
+                <button onclick="showContent('about')">about</button>
+                <button onclick="showContent('portfolio')">portfolio</button>
+                <button onclick="showContent('funFact');randomFact()">fun fact</button>
+            </nav>
+        </header>
+
+    <div id = "container">click a button!!!</div>
+
+    <template id = "portfolio">
+        <h2>cool things i made</h2>
+        <div id="exampleContainer">
+            <div id="nailPolish">
+                <h3>nail polish drawing</h3>
+                <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="KKezWXP" data-user="traceycats" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/traceycats/pen/KKezWXP">
+                    simple nail polish in canvas api</a> by traceycats (<a href="https://codepen.io/traceycats">@traceycats</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                <p id="nailPolishDescription">For this project, I used the Canvas API to draw a red bottle of nail polish.</p>
+            </div>
+            <div id="textGame">
+                <h3>text game</h3>
+                <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="YzvQRqN" data-user="traceycats" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/traceycats/pen/YzvQRqN">
+                    text game with endings</a> by traceycats (<a href="https://codepen.io/traceycats">@traceycats</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                <p id="textGameDescription">For this project, I used button events to form a tiny text based game with different endings depending on choices.</p>
+            </div>
+            <div id="bankApp">
+                <h3>basic bank app demo</h3>
+                <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="yLEjRPZ" data-user="traceycats" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/traceycats/pen/yLEjRPZ">
+                    bank app example</a> by traceycats (<a href="https://codepen.io/traceycats">@traceycats</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                <p id="bankAppDescription">This project demonstrates the use of routing and templates.</p>
+            </div>
+        </div>
+    </template>
+
+    <template id="about">
+        <h2>about me</h2>
+        <div id="aboutMe">
+        <img id="aboutPic" src="/images/blurry.JPG" alt="picture of a girl and a cat">
+        <p>I'm currently a student at Virginia Commonwealth University in the Interdisciplinary program, to graduate Spring 2023. My disciplines are chemistry and computer science. Outside of my studies, I enjoy video games, reading, and drawing.</p>
+        </div>
+    </template> 
+
+    <template id="funFact">
+        <h2>fun fact!</h2>
+        <div id ="fact">
+            <p>meow meow</p>
+        </div>
+    </template>
+</body>
+</html>
